@@ -31,6 +31,7 @@
           <img src='{{ .Params.featured_image }}' alt="Featured image"/>
         {{ end }}
         {{ partial "toc.html" . }}
+        {{ partial "posts/adsense.html" . }}
         {{ .Content }}
       </div>
 
