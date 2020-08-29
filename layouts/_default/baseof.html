@@ -85,9 +85,6 @@
     {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
-
-    <script data-ad-client="ca-pub-5395978246516433" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
     {{ hugo.Generator }}
   </head>
 
