@@ -30,11 +30,11 @@
         {{ if .Params.featured_image }}
           <img src='{{ .Params.featured_image }}' alt="Featured image"/>
         {{ end }}
-        {{ partial "toc.html" . }}
+        {{ partial "sharebutton.html" . }}
         {{ partial "posts/adsense.html" . }}
+        {{ partial "toc.html" . }}
         {{ .Content }}
       </div>
-
 
       <footer>
         {{ partial "posts/adsense.html" . }}
