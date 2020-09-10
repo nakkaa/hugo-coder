@@ -3,7 +3,8 @@
     <header>
       <h1>{{ .Title }}</h1>
     </header>
-
+    {{ partial "sharebutton.html" . }}
+    {{ partial "toc.html" . }}
     {{ .Content }}
   </article>
 </section>
