@@ -1,6 +1,8 @@
 {{ if and (gt .WordCount 100) (ne .Params.toc false) }}
 <div class="page-toc">
-  <summary>目次</summary>
-  <div>{{ .TableOfContents }}</div>
+  <details>
+    <summary>目次</summary>
+    {{ .TableOfContents }}
+  </details>
 </div>
 {{ end }}
