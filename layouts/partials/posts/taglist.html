@@ -1,0 +1,10 @@
+{{ if not (eq (len $.Site.Taxonomies.tags) 0) }}
+<section class="tax-section">
+  <h2>タグ一覧</h2>
+  {{- range $termName, $entries := .Site.Taxonomies.tags }}
+  <div class="tax">
+    <a href="{{ "/tags/" | relLangURL }}{{ $termName | urlize }}">{{ $termName }}</a>
+  </div>
+  {{- end }}
+</section>
+{{ end }}
