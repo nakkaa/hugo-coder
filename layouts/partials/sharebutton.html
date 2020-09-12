@@ -12,10 +12,9 @@
         <a href="http://getpocket.com/edit?url={{ .Permalink }}&title={{ .Title }}" target="_blank" title="pocketに保存する"><i class="fab fa-get-pocket"></i></a>
       </div>
       <div class="sns_button link">
-        <button title="記事のタイトルとURLをコピー" class="share-url" data-clipboard-text="{{ .Title }} {{ .Permalink }}"><i class="fas fa-link"></i></a>
+        <button title="記事のタイトルとURLをコピー" class="share-url" data-clipboard-text="{{ .Title }} {{ .Permalink }}"><i class="fas fa-link"></i></button>
       </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 </section>
 {{ end }}
 
