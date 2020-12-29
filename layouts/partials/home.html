@@ -27,5 +27,23 @@
       {{ end }}
     </ul>
     {{ end }}
-  </div>
+
+      <div class="content">
+<section class="container list">
+<nav class="my-parts">
+<ul>
+  {{ range first 5 .Site.RegularPages.ByDate.Reverse }}
+    <li>
+      <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+      <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+</ul>
+</nav>
 </section>
+</div>
+
+  </div>
+
+</section>
+
