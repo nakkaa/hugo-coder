@@ -10,7 +10,7 @@
           {{ .Site.Params.since }} -
         {{ end }}
         {{ now.Year }}
-        {{ with .Site.Params.Author }} {{ . }} {{ end }}
+        <a href="{{ .Site.Params.authorurl }}">{{ with .Site.Params.Author }} {{ . }} </a>{{ end }}
       {{ end }}
       {{ if not .Site.Params.hideCredits }}
         {{ if not .Site.Params.hideCopyright }} · {{ end }}
